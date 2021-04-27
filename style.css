@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
     /* color: #fff; */
 }
 
-header {
+.mafia {
     height: 100vh;
     background: url('bg.svg');
     overflow-x: hidden;
@@ -276,6 +277,48 @@ nav {
     object-fit: contain;
     filter: drop-shadow(10px 10px 5px rgba(0, 83, 156, 0.2));
 }
+
+.first-sec {
+    background: #00539C;
+}
+
+.first-sec-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-sec-inner div {
+    width: 50%;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.first-sec-inner div span {
+    color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    transform: rotate(270deg) !important;
+    display: block;
+    width: 15%;
+    margin-left: 2%;
+}
+
+.first-sec-inner div h2 {
+    color: #EEA47F;
+    font-size: 35px;
+    line-height: 51px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first-sec-inner div p {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 
 
 
