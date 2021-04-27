@@ -318,6 +318,57 @@ nav {
     font-family: 'Poppins', sans-serif;
 }
 
+.second-sec {
+    margin-top: 2%;
+}
+
+.second-sec-inner {
+    width: 100%;
+}
+
+.second-sec-inner h2 {
+    text-align: center;
+    color: #363636;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.second-sec-inner .line {
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+}
+
+.img-pack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.small {
+    color: #00539C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
 
 
 
