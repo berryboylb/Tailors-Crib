@@ -14,8 +14,8 @@ body {
 
 header {
     height: 100vh;
-    overflow: hidden !important;
     background: url('bg.svg');
+    overflow-x: hidden;
 }
 
 nav {
@@ -26,6 +26,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: #ededed;
+    position: fixed;
+    z-index: 9999;
 }
 
 .title {
@@ -44,6 +46,8 @@ nav {
     justify-content: flex-end;
     align-items: center;
     margin-right: 10%;
+    background: blue !important;
+    height: 100%;
 }
 
 
@@ -60,6 +64,8 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     box-shadow: 1.5px 3px #888888;
+    margin-top: 10px;
+    align-self: center;
 }
 
 .signup:hover {
@@ -156,10 +162,122 @@ nav {
     }
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
+
+
+.change {
+    margin-top: 10%;
 }
+
+.change h2 {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #00539C;
+    font-weight: 500;
+}
+
+.change h2 span {
+    color: #EEA47F;
+}
+
+.change div {
+    background: url('images/line.png');
+    background-repeat: no-repeat;
+    height: 150px;
+    /* background: olive; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change div p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #363636;
+    font-weight: 700;
+}
+
+.change div p span {
+    color: #00539C;
+}
+
+.list {
+    /* background: chartreuse; */
+    margin-top: 5%;
+    height: 100%;
+}
+
+.list div {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.list div i {
+    color: #C2E6BC;
+    font-size: 25px;
+    padding: 2%;
+    display: block;
+}
+
+.list div h2 {
+    color: #00539C;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.join-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-btn button {
+    background: #00539C;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: #EDEDED;
+    width: 50%;
+    outline: none;
+    border: none;
+    /* height: 50px; */
+    padding: 3%;
+}
+
+.join-btn button:hover {
+    border: 1px solid #00539C;
+    background: none;
+    color: #00539C;
+}
+
+
+.join-btn button:active {
+    padding: 2.5%;
+}
+
+.sewer {
+    /* background: #00539C; */
+    height: 100%;
+    padding: 1%;
+    width: 50% !important;
+}
+
+.image-con {
+    /* background: #C2E6BC; */
+    height: 500px;
+}
+
+.image-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(10px 10px 5px rgba(0, 83, 156, 0.2));
+}
+
+
 
 
 @media screen and (max-width:768px){
