@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* color: #fff; */
+}
+
+header {
+    height: 100vh;
+    overflow: hidden !important;
+    background: url('bg.svg');
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ededed;
+}
+
+.title {
+    /* background: blue; */
+    /* height: 100%; */
+}
+
+.title img {
+    object-fit: cover;
+    height: 50px;
+}
+
+.navlist {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+}
+
+
+
+
+
+.signup {
+    background: #00539C;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    box-shadow: 1.5px 3px #888888;
+}
+
+.signup:hover {
+    color:  #00539C;
+    background: none;
+    font-weight: bold;
+    border: 1px solid #00539C;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.line0 {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.line1 {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.line2 {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.nav-active {
+    position: absolute;
+    background: #ededed;
+    height: 93vh;
+    width: 100% !important;
+    right: 0; 
+    left: 0;
+    bottom: 0;
+     top: 7vh;
+     flex-direction: column;
+     justify-content: space-around;
+     display: flex !important;
+     z-index: 9999999999999;
+}
+
+.toggle .line0 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    margin-top: 5px;
+}
+
+.toggle .line1 {
+    opacity: 0;
+}
+
+.toggle .line2 {
+    transform: rotate(45deg) translate(-6px, -6px);
+    margin-top: 6px;
+    
+}
+
+
+@media screen and (max-width:1024px) {
+    .navlist {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        justify-content: space-between;
+        height: 8vh;
+        padding: 5%;
+    }
+
+    .menu {
+        display: block ;
+    }
+    
+    .navlist {
+        display: none;
+    }
+
+    .navlist li, .signup, .login {
+        font-size: 14px;
+    }
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:768px){
+   
+}
+
