@@ -370,6 +370,141 @@ figure {
     line-height: 30px;
 }
 
+footer {
+    margin-top: 3%;
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-inner .meth {
+    width: 50%;
+    padding: 1%;
+    border-right: 2px solid #EEA47F ;
+}
+
+.footer-inner .meth h2 {
+    color: #00539C;
+    font-weight: 600;
+    font-size: 41.9904px;
+    line-height: 63px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info div {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+   
+}
+
+.info div img {
+    height: 20px;
+    display: block;
+}
+
+.info div p {
+    margin-left: 3%;
+    color: #00539C;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-inner .methh {
+    width: 50%;
+    padding: 1%;
+}
+
+.footer-inner .methh h2 {
+    color: #00539C;
+    font-weight: 600;
+    font-size: 41.9904px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-inner .methh p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #00539C;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}  
+
+.myform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myform div {
+    width: 80%;
+    margin-top: 1%;
+}
+
+.myform div label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.myform div input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: 1px solid #6F6F6F;
+    border-radius: 8px;
+    padding: 1%;
+    color: #00539C;
+}
+
+.myform div input:hover {
+    border: 1px solid #00539C;
+}
+
+.submit {
+    margin-top: 2%;
+    background: #00539C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    width: 30%;
+    border: none;
+    outline: none;
+    color: #EDEDED;
+    padding: 1%;
+
+}
+
+.submit:hover {
+    border: 1px solid #00539C;
+    background: none;
+    color: #00539C;
+}
+
+.submit:active {
+    padding: 0.7%;
+}
+
+.btm-img {
+   width: 100%;
+}
+
+
+
 
 
 
