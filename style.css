@@ -502,6 +502,13 @@ footer {
    width: 100%;
 }
 
+#camp {
+    display: none;
+}
+.high  {
+    display: none !important;
+}
+
 
 
 
@@ -603,5 +610,126 @@ footer {
    figure img {
        width: 100%;
    }
+}
+
+@media screen and (max-width:768px) {
+    #top {
+        margin-top: 10%;
+    }
+
+    .change div p {
+        color: coral;
+        font-size: 14px;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    #myrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+    .list {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    #camp1 {
+        display: none !important;
+    }
+
+    #camp {
+        display: block;
+        height: 200px;
+    }
+
+    .image-con {
+        height: 100%;
+    }
+
+    .list div i{
+        font-size: 18px;
+    }
+ 
+    .list div h2 {
+        font-size: 20px;
+    }
+ 
+    .join-btn button {
+        font-size: 16px;
+        width: 60%;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+
+    .first-sec-inner {
+        flex-direction: column;
+    }
+
+    .first-sec-inner div {
+        width: 100%;
+    }
+
+    .fly {
+        display: none !important;
+    }
+
+    .high {
+        display: block !important;
+    }
+
+    .img-pack {
+        flex-direction: column;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    figure img {
+        width: 50%;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .meth{
+        width: 100% !important;
+        border-right: none !important;
+    }
+    .methh {
+        width: 100% !important;
+    }
+    .myform {
+    }
+    .myform div{
+        width: 100%;
+    }
+
+    .submit {
+        margin-top: 5%;
+        font-size: 18px;
+    }
+
+    .line {
+        width: 50%;
+    }
+
+    .meth h2 {
+        font-size: 28px !important;
+    }
+
+    .methh h2 {
+        font-size: 28px !important;
+    }
+
+    .info p {
+        font-weight: 500 !important;
+        font-size: 14px !important;
+    }
 }
 
