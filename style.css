@@ -557,11 +557,11 @@ footer {
    }
 
    .big {
-       font-size: 18px;
+       font-size: 16px;
    }
 
    .small {
-       font-size: 16px;
+       font-size: 14px;
    }
 
    .footer-inner .meth h2 {
@@ -590,6 +590,11 @@ footer {
 
    .submit {
        font-size: 20px;
+   }
+
+   figure {
+       border: 1px solid black;
+       width: 20%;
    }
 }
 
