@@ -511,6 +511,7 @@ footer {
 @media screen and (max-width:1024px){
    .change h2 {
        font-size: 30px;
+       width: 100%;
    }
 
    .change div {
@@ -521,6 +522,7 @@ footer {
    .change div p {
        font-size: 16px;
        margin-left: 10%;
+       font-weight: bold;
    }
 
    .list div i{
@@ -595,7 +597,6 @@ footer {
    }
 
    figure {
-       border: 1px solid black;
        width: 20%;
    }
 
