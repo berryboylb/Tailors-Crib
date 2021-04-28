@@ -47,7 +47,6 @@ nav {
     justify-content: flex-end;
     align-items: center;
     margin-right: 10%;
-    background: blue !important;
     height: 100%;
 }
 
@@ -509,7 +508,88 @@ footer {
 
 
 
-@media screen and (max-width:768px){
-   
+@media screen and (max-width:1024px){
+   .change h2 {
+       font-size: 30px;
+   }
+
+   .change div {
+       width: 100%;
+       justify-content: flex-start;
+   }
+
+   .change div p {
+       font-size: 16px;
+       margin-left: 10%;
+   }
+
+   .list div i{
+       font-size: 20px;
+   }
+
+   .list div h2 {
+       font-size: 25px;
+   }
+
+   .join-btn button {
+       font-size: 18px;
+   }
+
+   .image-con {
+       height: 400px;
+   }
+
+   .first-sec-inner div span {
+       font-size: 40px;
+       padding: 2%;
+   }
+
+   .first-sec-inner div h2 {
+       font-size: 30px;
+   }
+
+   .first-sec-inner div p {
+       font-size: 18px;
+   }
+
+   .second-sec-inner h2 {
+       font-size: 40px;
+   }
+
+   .big {
+       font-size: 18px;
+   }
+
+   .small {
+       font-size: 16px;
+   }
+
+   .footer-inner .meth h2 {
+       font-size: 35px;
+   }
+
+   .info div img {
+       height: 16px;
+   }
+
+   .info div p {
+       font-size: 16px;
+   }
+
+   .footer-inner .methh h2 {
+       font-size:   35px;
+   }
+
+   .footer-inner .methh p {
+       font-size: 14px;
+   }
+
+   .myform div label {
+       font-size: 18px;
+   }
+
+   .submit {
+       font-size: 20px;
+   }
 }
 
