@@ -1,16 +1,30 @@
 
-const menu = document.querySelector(".menu");
-const nav = document.querySelector(".navlist");
-const line0 = document.querySelector(".line0");
-const line1 = document.querySelector(".line1");
-const line2 = document.querySelector(".line2");
+const lastSec = document.querySelector(".last-sec");
+const waitBtn = document.querySelector("#wait-btn");
+const close = document.querySelector("#closed");
 
 
-const burgerMenu = ()=> {
-    menu.addEventListener("click", ()=>{
-        nav.classList.toggle('nav-active');
-        menu.classList.toggle('toggle');
-    });
+const burgerMenu = () => {
+   waitBtn.addEventListener('click', () => {
+       if(lastSec.style.display = "none") {
+           lastSec.style.display = "block";
+           let tl = gsap.timeline({defaults:{duration: 1.5}});
+           tl.from('.wait-form', { y:100, opacity: 0, ease: 'bounce',})
+       } else {
+            lastSec.style.display = "none"
+       }
+   });
+
+   close.addEventListener("click", ()=> {
+       if(lastSec.style.display = "block"){
+            lastSec.style.display = "none";
+            tl.to('.wait-form', { x:100, opacity: 0, ease: 'bounce',})
+       }else {
+            lastSec.style.display = "block";
+       }
+   })
 }
 
 burgerMenu();
+
+

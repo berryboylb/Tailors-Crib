@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailorscrib</title>
+    <link rel="stylesheet" href="mystyles/style.css">
+    <!----aos libary packages-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!----Custom css --->
+    <link rel="stylesheet" href="newstyles/style.css">
+</head>
+<body>
+    <div class="wrap"  id="loadingArea">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="text">LOADING</div>
+        </div>
+      </div>
+
+      <header>
+        <nav>
+            <div class="title"><img src="logo.png" alt=""></div>
+                <ul class="navlist">
+                    <a href="index.html"><button class="login">Home</button></a>
+                    <a href="#"><button class="signup">Join The crib</button></a>
+                </ul>
+            <div class="menu">
+                <div class="line0"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+        </nav>
+    </header>
+      
+      <section class="wait"  data-aos="zoom-in-down" data-aos-duration="1000"  data-aos-easing="zoom-in-down" data-aos-delay="3000">
+            <div class="wait-in">
+                <div class="container">
+                    <img src="images/hurray.svg" alt="image">
+                </div>
+                <div class="bang">
+                    <h1>Welcome on board!</h1>
+                    <p>We will be in touch.</p>
+                </div>
+            </div>
+      </section>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="script/scripts.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   <script>
+        $( document ).ready(function() {
+            setTimeout(() => {
+            $('.wrap').fadeToggle();
+            }, 3000);
+        });
+   </script>
+</body>
+</html>

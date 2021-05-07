@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailorscrib</title>
+      <!-- Bootstrap CSS -->
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+       <!----aos libary packages-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!----Custom css --->
+      <link rel="stylesheet" href="mystyles/style.css">
+      <link rel="stylesheet" href="mynew/style.css">  
+      <!---Font awesome-->
+      <script src="https://kit.fontawesome.com/a91b895da5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap"  id="loadingArea">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="text">LOADING</div>
+        </div>
+      </div>
+
+      <header>
+        <nav>
+            <div class="title"><img src="logo.png" alt=""></div>
+                <ul class="navlist">
+                    <a href="#"><button class="signup">Home</button></a>
+                </ul>
+        </nav>
+    </header>
+
+    <section  class="paint">
+        <div class="container" id="top">
+            <div class="img-con" data-aos="zoom-out-right" data-aos-easing="zoom-in-down" data-aos-delay="3000">
+                <img src="images/indian-tailor.svg" alt="">
+            </div>
+            <div class="pointer" data-aos="zoom-out-down" data-aos-easing="zoom-in-down" data-aos-delay="3000">
+                <h1>Good at sewing?</h1>
+                <p>Join the Crib now to be among our pioneer <span>Super Hero</span> tailors</p>
+                <button id="btn">Join now</button>
+            </div>
+            <div class="out-form" >
+               
+                <form action="" method="post" class="new-form">
+                    <i id="close" class="fas fa-times"></i>
+                    <h2>Join our wait-list</h2>
+                    <div class="nap"><p>Provide necessary contact details</p><img src="images/rocket.svg" alt=""></div>
+
+                    <div class="magrib">
+                        <div class="field">
+                            <label for="firstname">First name</label><br>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+    
+                        <div class="field">
+                            <label for="lastname">Last name</label><br>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+    
+                        <div class="field">
+                            <label for="Email">Email</label><br>
+                            <input type="email" id="Email" name="Email" required>
+                        </div>
+    
+                        <div class="field">
+                            <label for="BrandName">Brand Name</label><br>
+                            <input type="text" id="BrandName" name="BrandName" required>
+                        </div>
+                        <div class="field">
+                            <label for="Address">Address</label><br>
+                            <input type="text" id="Address" name="Address" required>
+                        </div>
+    
+                        <input class="submit" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+   <script src="script/scripts.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   <script>
+        $( document ).ready(function() {
+            setTimeout(() => {
+            $('.wrap').fadeToggle();
+            }, 3000);
+        });
+
+    //   if(  $(document).ready(function(){})){
+
+    //   }
+   </script>
+</body>
+</html>

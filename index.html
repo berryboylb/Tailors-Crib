@@ -2,168 +2,200 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Tailorscrib</title>
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!----Custom css-->     
-    <link rel="stylesheet" href="style.css">
+     <!---Font awesome-->
     <script src="https://kit.fontawesome.com/a91b895da5.js" crossorigin="anonymous"></script>
+      <!----aos libary packages-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!----custom Css -->
+    <link rel="stylesheet" href="homestyles/style.css">
+    <link rel="stylesheet" href="mystyles/style.css">
+    
 </head>
 <body>
-    <div class="mafia">
-        <nav>
-            <div class="title"> <img src="logo.png" alt=""> </div>
-                <ul class="navlist">
-                    <a href="#"><button class="signup">Join The Crib</button></a>
-                </ul>
-            <div class="menu">
-                <div class="line0"></div>
-                <div class="line1"></div>
-                <div class="line2"></div>
-            </div>
-        </nav>
-        <div class="container" id="top">
-            <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12 change"> 
-                    <h2>Get Your Clothes Sewn <span>Without Stress</span></h2>
-                    <div>
-                        <p>Here, you are  always set for “<span>Owambe</span>”</p>
-                    </div>
-                </div>
-            </div>
-           
-
-            
-                <div class="row" id="myrow">
-                    <div class="col-md-6 col-lg-6 col-sm-6 sewer" id="camp">
-                        <div class="image-con">
-                            <img src="images/tailor.png" alt="">
-                       </div>
-                    </div>
-                    <div class="col-md-12 col-lg-6 col-sm-12 list">
-                        <div>
-                            <i class="fas fa-check-circle"></i> <h2>No dissapointments</h2>
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i> <h2>No stress</h2>
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i> <h2>Material Pickup and delivery</h2>
-                        </div>
-                        <div>
-                            <i class="fas fa-check-circle"></i> <h2>Earn life time income</h2>
-                        </div>
-    
-                        <div class="join-btn">
-                            <button>Join our Waitlist</button>
-                        </div>
-                    </div>
-    
-                    <div class="col-md-6 col-lg-6 col-sm-6 sewer" id="camp1">
-                        <div class="image-con">
-                            <img src="images/tailor.png" alt="">
-                       </div>
-                    </div>
-            </div>
-
-           
-
+    <div class="wrap"  id="loadingArea">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="text">LOADING</div>
         </div>
-        <section class="first-sec">
-            <div class="container">
-                <div class="first-sec-inner">
-                    <div>
-                        <span>01</span>
-                        <h2>No dissapointment</h2>
-                        <p>No worries, We get the job done in time. </p>
-                    </div>
-                    <div>
-                        <span class="fly">03</span>
-                        <span class="high">02</span>
-                        <h2>No stress</h2>
-                        <p>Well, that’s right! Netflix and chill let’s do the hassle. </p>
-                    </div>
-                </div>
-                <div class="first-sec-inner">
-                    <div>
-                        <span  class="fly">02</span>
-                        <span class="high">03</span>
-                        <h2>Material pick up and delivery</h2>
-                        <p>We pick up materials from your doorstep and deliver to your doorstep after sewing.</p>
-                    </div>
-                    <div>
-                        <span>04</span>
-                        <h2>Earn life time income</h2>
-                        <p>Earn 1% on all sewing payment made by referal for life, sounds cool right? </p>
-                    </div>
+      </div>
+    <header>
+        <nav>
+            <div class="title"><img src="logo.png" alt=""></div>
+                <ul class="navlist">
+                    <a href="#"><button class="login">Join The Crib</button></a>
+                </ul>
+        </nav>
+    </header>
+    <section class="first-sec">
+        <div class="container">
+            <div class="pedal" data-aos="zoom-in-up"  data-aos-delay="3000" data-aos-duration="1500">
+                <h2>Get Your Clothes Sewn <span>Without Stress</span></h2>
+                <div class="mini">
+                    <p  class="txt-type" data-wait="3000" data-words='["Here, you are  always set for <span>“Owambe”</span>", "We will be your favorite <span>“Obioma”</span>"]'>Here, you are  always set for <span>“Owambe”</span></p>
                 </div>
             </div>
-        </section>
-        <section class="second-sec">
-            <div class="container">
-                <div class="second-sec-inner">
-                    <h2>Meet The Team</h2>
-                    <img class="line" src="images/line2.svg" alt="">
-                    <div class="img-pack">
-                        <figure>
-                            <img src="images/Ellipse.png" alt="image" >
-                            <figcaption class="big">Chukwuemeka Noble</figcaption>
-                            <figcaption class="small">CEO</figcaption>
-                          </figure>
-                          <figure>
-                            <img src="images/Ellipse (1).png" alt="image" >
-                            <figcaption class="big">David Chima</figcaption>
-                            <figcaption class="small">Lead Product Designer</figcaption>
-                          </figure>
-                          <figure>
-                            <img src="images/Ellipse (2).png" alt="image" >
-                            <figcaption class="big">Femi Winners</figcaption>
-                            <figcaption class="small">Full Stack Developer</figcaption>
-                          </figure>
-                          <figure>
-                            <img src="images/Ellipse (3).png" alt="image" >
-                            <figcaption class="big">Nwachukwu Blessing</figcaption>
-                            <figcaption class="small">CTO</figcaption>
-                          </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-               <div class="footer-inner">
-                <div class="meth">
-                    <h2>Contact address</h2>
-                    <div class="info">
-                        <div><img src="images/Vector.png" alt="image"><p>Floor 1, swag fountain by Adebimpe close, Lagos. Nigeria</p></div>
-                        <div><img src="images/Group 15.png" alt="image"><p>Info@tailorscrib.com</p></div>
-                        <div><img src="images/Group 14.png" alt="image"><p>+2348059917656 or +2348059917656</p></div>
-                    </div>
-                </div>
-                <div class="methh">
-                    <h2>Join our mailing list</h2>
-                    <p>Get updates on what’s happening at Tailorscrib HQ</p>
-                    <form class="myform" action="">
-                        <div>
-                            <label for="fname">First name</label><br>
-                            <input type="text" id="fname" name="fname" required>
-                        </div>
-                        <div>
-                            <label for="Email">Email</label><br>
-                            <input type="text" id="Email" name="Email" required>
-                        </div>
-                        <input class="submit" type="submit" value="Submit">
-                    </form>
+            <div class="hind">
+                <div class="img-con" id="mobile" data-aos="fade-down-left" data-aos-delay="3000" data-aos-duration="1000">
+                    <img src="images/tailor.png" alt="image">
+                </div> 
+               <div class="list" data-aos="fade-up-right" data-aos-delay="3000" data-aos-duration="1000">
+                    <div><img src="images/badge.png" alt="image"> <h2>No dissapointments</h2> </div>
+                    <div><img src="images/badge.png" alt="image"> <h2>No stress</h2> </div>
+                    <div><img src="images/badge.png" alt="image"> <h2>Material Pickup and delivery</h2> </div>
+                    <div><img src="images/badge.png" alt="image"> <h2>Earn life time income</h2> </div>
+
+                <div class="wait-btn">
+                    <button id="wait-btn">Join our waitlist</button>
+                    
                 </div>
                </div>
+               <div class="img-con" id="desktop" data-aos="fade-down-right" data-aos-delay="3000" data-aos-duration="1000">
+                   <img src="images/tailor.png" alt="image">
+               </div>
             </div>
-            <img class="btm-img" src="images/footer.png" alt="image">
-        </footer>
-    </div>
-    
+        </div>
+    </section>
+    <section class="second-sec">
+        <div class="container">
+            <div class="midas">
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-center">
+                    <span>01</span>
+                    <h1>No dissapointment</h1>
+                    <p>No worries, We get the job done in time. </p>
+                </div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-center">
+                    <span class="blow">03</span>
+                    <span class="pie">02</span>
+                    <h1>No stress</h1>
+                    <p>Well, that’s right! Netflix and chill let’s do the hassle.</p>
+                </div>
+            </div>
+            <div class="midas">
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-center">
+                    <span class="blow">02</span>
+                    <span class="pie">03</span>
+                    <h1>Material pick up and delivery</h1>
+                    <p>We pick up materials from your doorstep and deliver to your doorstep after sewing.</p>
+                </div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-center">
+                    <span>04</span>
+                    <h1>Earn life time income</h1>
+                    <p>Earn 1% on all sewing payment made by referal for life, sounds cool right?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third-sec">
+        <div class="container">
+            <div class="tee-top" data-aos="zoom-in-up">
+                <h2>Meet The Team</h2>
+                <img src="images/line2.svg" alt="image">
+            </div>
+            <div class="touch">
+                <figure data-aos="flip-right">
+                    <img src="images/Ellipse.png" alt="Image" >
+                    <figcaption class="small">Chukwuemeka Noble</figcaption>
+                    <figcaption class="big"> CEO </figcaption>
+                </figure>
+
+                <figure data-aos="flip-right">
+                    <img src="images/Ellipse (1).png" alt="Image" >
+                    <figcaption class="small">David Chima</figcaption>
+                    <figcaption class="big"> Lead Product Designer </figcaption>
+                </figure>
+
+                <figure data-aos="flip-right">
+                    <img src="images/Ellipse (2).png" alt="Image" >
+                    <figcaption class="small">Femi Winners</figcaption>
+                    <figcaption class="big"> Full Stack Developer </figcaption>
+                </figure>
+
+                <figure data-aos="flip-right">
+                    <img src="images/Ellipse (3).png" alt="Image" >
+                    <figcaption class="small">Nwachukwu Blessing</figcaption>
+                    <figcaption class="big"> CTO </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+          <div class="behind">
+            <div class="contact"  data-aos="zoom-in-right">
+                <h2>Contact address</h2>
+                <div class="mid"><img src="images/Vector.png" alt="image"> <p>Floor 1, swag fountain by Adebimpe close, Lagos. Nigeria</p> </div>
+                <div class="mid"><img src="images/Group 15.png" alt="image"> <p>Info@tailorscrib.com</p> </div>
+                <div class="mid"><img src="images/Group 14.png" alt="image"> <p>+2348059917656 or +2348059917656</p> </div>
+            </div>
+            <div class="ment" data-aos="zoom-in-left">
+                <h2>Join our mailing list</h2>
+                <p>Get updates on what’s happening at Tailorscrib HQ</p>
+                <form action="" method="post" class="myform">
+                    <div class="field">
+                        <label for="firstname">First name</label><br>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="field">
+                        <label for="Email">Email Address</label><br>
+                        <input type="text" id="Email" name="Email" required>
+                    </div>
+
+                    <input type="submit" value="Submit" class="sub">
+                </form>
+            </div>
+          </div>
+        </div>
+        <img src="images/footer.png" alt="Image" class="foot">
+    </footer>
+
+    <section class="last-sec">
+        <div class="container">
+            <div class="meow">
+                <form action="" method="post" class="wait-form">
+                    <i id = "closed" class="far fa-times-circle"></i>
+                    <h2>Join our wait-list</h2>
+                    <div class="mind"><p>Be the first to know when our product is Up!</p> <img src="images/rocket icon.png" alt=""> </div>
+                    <div class="bleed">
+                        <label for="firstname">First name</label><br>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="bleed">
+                        <label for="lastname">Last name</label><br>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                    <div class="bleed">
+                        <label for="Email">Email</label><br>
+                        <input type="text" id="Email" name="Email" required>
+                    </div>
+
+                    <input type="submit" value="Submit" class="wait-submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="typewriter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-   
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $( document ).ready(function() {
+            setTimeout(() => {
+            $('.wrap').fadeToggle();
+            }, 3000);
+        });
+   </script>
 </body>
 </html>
