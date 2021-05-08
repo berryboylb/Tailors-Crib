@@ -27,7 +27,7 @@
         <nav>
             <div class="title"><img src="logo.png" alt=""></div>
                 <ul class="navlist">
-                    <a href="#"><button class="login">Join The Crib</button></a>
+                    <a href="join.html"><button class="login">Join The Crib</button></a>
                 </ul>
         </nav>
     </header>
@@ -139,17 +139,17 @@
             <div class="ment" data-aos="zoom-in-left">
                 <h2>Join our mailing list</h2>
                 <p>Get updates on what’s happening at Tailorscrib HQ</p>
-                <form action="" method="post" class="myform">
+                <form action="processors/index2.php" method="post" class="myform">
                     <div class="field">
                         <label for="firstname">First name</label><br>
-                        <input type="text" id="firstname" name="firstname" required>
+                        <input type="text" id="firstname" name="first_name" required>
                     </div>
                     <div class="field">
                         <label for="Email">Email Address</label><br>
-                        <input type="text" id="Email" name="Email" required>
+                        <input type="text" id="Email" name="email" required>
                     </div>
 
-                    <input type="submit" value="Submit" class="sub">
+                    <input type="submit" name="submit" value="Submit" class="sub">
                 </form>
             </div>
           </div>
@@ -160,24 +160,24 @@
     <section class="last-sec">
         <div class="container">
             <div class="meow">
-                <form action="" method="post" class="wait-form">
+                <form action="processors/index1.php" method="post" class="wait-form">
                     <i id = "closed" class="far fa-times-circle"></i>
                     <h2>Join our wait-list</h2>
                     <div class="mind"><p>Be the first to know when our product is Up!</p> <img src="images/rocket icon.png" alt=""> </div>
                     <div class="bleed">
                         <label for="firstname">First name</label><br>
-                        <input type="text" id="firstname" name="firstname" required>
+                        <input type="text" id="firstname" name="first_name" required>
                     </div>
                     <div class="bleed">
                         <label for="lastname">Last name</label><br>
-                        <input type="text" id="lastname" name="lastname" required>
+                        <input type="text" id="lastname" name="last_name" required>
                     </div>
                     <div class="bleed">
                         <label for="Email">Email</label><br>
-                        <input type="text" id="Email" name="Email" required>
+                        <input type="text" id="Email" name="email" required>
                     </div>
 
-                    <input type="submit" value="Submit" class="wait-submit">
+                    <input type="submit" name="submit" value="Submit" class="wait-submit">
                 </form>
             </div>
         </div>
