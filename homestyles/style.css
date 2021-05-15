@@ -867,6 +867,7 @@ footer {
           flex-direction: column;
   position: relative;
   border-radius: 8px;
+  z-index: 3;
 }
 
 .wait-form h2 {

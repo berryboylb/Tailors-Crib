@@ -12,7 +12,7 @@ try {
         die ('Cannot connect to server');
     }
     else {
-        echo "<h1>Connected</h1>";
+        //echo "<h1>Connected</h1>";
     }
 }
   

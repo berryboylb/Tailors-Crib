@@ -139,7 +139,7 @@
             <div class="ment" data-aos="zoom-in-left">
                 <h2>Join our mailing list</h2>
                 <p>Get updates on what’s happening at Tailorscrib HQ</p>
-                <form action="processors/index2.php" method="post" class="myform">
+                <form  id="sub-form" method="post"  class="myform" action="processors/index2.php">
                     <div class="field">
                         <label for="firstname">First name</label><br>
                         <input type="text" id="firstname" name="first_name" required>
@@ -157,10 +157,10 @@
         <img src="images/footer.png" alt="Image" class="foot">
     </footer>
 
-    <section class="last-sec">
+    <section class="last-sec" id="last-sec">
         <div class="container">
             <div class="meow">
-                <form action="processors/index1.php" method="post" class="wait-form">
+                <form role="form" action="index1.php"  id="wait-list-form" method="post" class="wait-form">
                     <i id = "closed" class="far fa-times-circle"></i>
                     <h2>Join our wait-list</h2>
                     <div class="mind"><p>Be the first to know when our product is Up!</p> <img src="images/rocket icon.png" alt=""> </div>
@@ -183,10 +183,12 @@
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="typewriter.js"></script>
+    <script src="script/typewriter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <!-- <script src="auth1.js"></script> -->
+    <!-- <script src="script/auth2.js"></script> -->
     <script>
         AOS.init();
     </script>
@@ -197,5 +199,100 @@
             }, 3000);
         });
    </script>
+   <script src="script/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#wait-list-form').on('submit', function(){
+
+                var that = $(this),
+                    url = that.attr('action'),
+                    type = that.attr('method'),
+                    data = {};
+
+                that.find('[name]').each(function(index, value) {
+                    var that = $(this),
+                        name = that.attr('name'),
+                        value = that.val();
+
+                    data[name] = value;
+                });
+
+                $.ajax({
+                    url: url,
+                    type: type,
+                    data: data,
+                    dataType: 'JSON',
+
+
+                    success: function(response)
+                    {
+                        $.each( response, function( key, value ) {
+                           
+                            if(key == 'success'){
+                                swal(key, value, key)
+                                .then(setTimeout(()=>{
+                                    window.location = "waitlist.html"
+                                }, 1000))
+                            }
+                            else {
+                                swal(key, value, key)
+                            }
+                            
+                            
+                        });
+                    },
+                });
+                //$('#wait-list-form').reset();
+                $('#wait-list-form')[0].reset()
+                $('#last-sec').hide();
+                return false;
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function(){
+            $('#sub-form').on('submit', function(){
+
+                var that = $(this),
+                    url = that.attr('action'),
+                    type = that.attr('method'),
+                    data = {};
+
+                that.find('[name]').each(function(index, value) {
+                    var that = $(this),
+                        name = that.attr('name'),
+                        value = that.val();
+
+                    data[name] = value;
+                });
+
+                $.ajax({
+                    url: url,
+                    type: type,
+                    data: data,
+                    dataType: 'JSON',
+
+
+                    success: function(response)
+                    {
+                        $.each( response, function( key, value ) {
+                            if(key == 'success'){
+                                swal(key, value, key)
+                                .then(setTimeout(()=>{
+                                    window.location = "waitlist.html"
+                                }, 1000))
+                            }
+                            else {
+                                swal(key, value, key)
+                            }
+                        });
+                    },
+                });
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>

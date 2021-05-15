@@ -18,7 +18,6 @@ const burgerMenu = () => {
    close.addEventListener("click", ()=> {
        if(lastSec.style.display = "block"){
             lastSec.style.display = "none";
-            tl.to('.wait-form', { x:100, opacity: 0, ease: 'bounce',})
        }else {
             lastSec.style.display = "block";
        }
